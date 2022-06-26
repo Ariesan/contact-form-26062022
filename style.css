@@ -1,0 +1,276 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1c2e44;
+  padding-bottom: 100px;
+}
+
+#contact {
+  width: 100%;
+  height: 100%;
+}
+  
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 30px 0;
+  font: 300 4rem 'Oswald', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+  
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  max-width: 1000px;
+}
+  
+/* Left Side */
+.form-horizontal {
+  /*float: left;*/
+  max-width: 400px;
+  font-family: 400 'Oswald', sans-serif;  
+}
+  
+.form-control, 
+textarea {
+  width: 400px;
+  background-color: #0b121c;
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+.contact-wrapper > form > input {
+  margin-bottom: 15px;
+  padding: 8px 3px;
+  border-radius: 5px;
+}
+
+.contact-wrapper > form > textarea {
+  margin-bottom: 15px;
+  padding: 5px 3px;
+  border-radius: 5px;
+}
+  
+.send-button {
+  margin-top: 15px;
+  height: 34px;
+  width: 410px;
+  overflow: hidden;
+  transition: all .5s ease-in-out;
+}
+  
+.alt-send-button {
+  width: 400px;
+  height: 34px;
+  transition: all .5s ease-in-out;
+  margin: 0px 3px;
+}
+  
+.send-text {
+  display: block;
+  margin-top: 10px;
+  font: 700 15px 'Lato', sans-serif;
+  letter-spacing: 2px;
+  color: #1c2e44; 
+}
+
+.alt-send-button:hover {
+  transform: translate3d(0px, -29px, 0px);
+}
+  
+/* Right Side */
+
+.contact-container {
+  max-width: 500px;
+}
+  
+/* Location, Phone, Email Section */
+.contact-list {
+  list-style-type: none;
+  width: 300px;
+}
+
+.list-item {
+  line-height: 3.5;
+  color: #aaa;
+}
+  
+.contact-text {
+  font: 300 18px 'Lato', sans-serif;
+  letter-spacing: 1px;
+  color: #bbb;
+}
+  
+.place,
+.phone,
+.mail {
+  margin-left: 15px;
+  letter-spacing: 5px;
+}  
+
+  .contact-text {
+    color: white;
+  }
+  
+  .contact-text a {
+    color: #bbb;
+    text-decoration: none;
+    transition-duration: 0.2s;
+  } 
+  
+  .contact-text a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
+  
+  /* Social Media Icons */
+  .social-media-list {
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .social-media-list li a {
+    color: #fff;
+  }
+  
+  .social-media-list li {
+    position: relative; 
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 10px 3px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgb(27,27,27);
+    cursor: pointer; 
+    transition: all .2s ease-in-out;
+  }
+  
+.social-media-list li:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0 0 0 1px #fff;
+  transition: all .2s ease-in-out;
+}
+  
+.social-media-list li:hover {
+  background-color: #fff; 
+}
+  
+.social-media-list li:hover:after {
+  opacity: 1;  
+  transform: scale(1.12);
+  transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+}
+  
+.social-media-list li:hover a {
+  color: #000;
+}
+
+hr {
+  border-color: rgba(255,255,255,.6);
+}
+
+.copyright > a {  
+  font: 150 12px 'Oswald', sans-serif;
+  color: #fff;
+  letter-spacing: 1px;
+  text-align: left;
+  text-decoration: none;
+  margin-left: 95px; 
+  letter-spacing: 3px;
+  line-height: 4.5;
+}
+
+.copyright > a:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E %3Cpath fill='white' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 20%;
+  border-bottom: 0;
+  padding-bottom: .3em;
+  text-decoration: none;
+}
+
+/* Media Queries*/
+
+  @media screen and (max-width: 850px) {
+    .contact-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    .contact-container, .form-horizontal {
+      margin: 0 auto;
+    }  
+    
+    .contact-container {
+      margin-top: 60px;
+      max-width: 300px;
+    }    
+    .social-media-list li {
+      height: 60px;
+      width: 60px;
+      line-height: 60px;
+    }
+    .social-media-list li:after {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+    }
+  }
+  
+  @media screen and (max-width: 569px) {
+  
+    .direct-contact-container, .form-wrapper {
+      float: none;
+      margin: 0 auto;
+    }  
+    .form-control, textarea {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .send-button, .alt-send-button {
+      width: 92%;
+    }
+
+    .contact-container {
+      margin-top: 50px;
+      max-width: 250px;
+    }  
+    .social-media-list, .contact-list {
+      left: 0;
+    }
+    .social-media-list li {
+      height: 55px;
+      width: 55px;
+      line-height: 55px;
+      font-size: 2rem;
+    }
+    .social-media-list li:after {
+      width: 55px;
+      height: 55px;
+      line-height: 55px;
+    }    
+  }
+  

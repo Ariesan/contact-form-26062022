@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css" integrity="sha384-eoTu3+HydHRBIjnCVwsFyCpUDZHZSFKEJD0mc3ZqSBSb6YhZzRHeiomAUWCstIWo" crossorigin="anonymous">
+</head>
+<body>
+
+<section id="contact">
+    <h1 class="section-header">Contact</h1>
+    <div class="contact-wrapper"> 
+    <!-- Left side --> 
+        <form id="contact-form" class="form-horizontal" role="form">
+            <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+            <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+            <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+            <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                <div class="alt-send-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#1c2e44" class="bi bi-send-fill" viewBox="0 0 16 16">
+                        <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
+                    </svg>
+                    <span class="send-text">SEND</span>
+                </div>            
+            </button>
+            
+        </form>
+
+        <!-- Right side --> 
+        <div class="contact-container">
+            <ul class="contact-list">
+                <li class="list-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                    </svg>
+                    <span class="contact-text place">Indonesia</span>
+                </li>
+
+                <li class="list-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                    </svg>
+                    <span class="contact-text phone">
+                    <a href="tel:62-812-3456-789" title="Give me a call">(62) 812-3456</a>
+                    </span>
+
+                <li class="list-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                    </svg>
+                    <span class="contact-text mail">
+                    <a href="mailto:#" title="Send me an email">ariesan@mail.com</a>
+                    </span>
+                </ul>
+
+                <hr>
+
+                <ul class="social-media-list">
+                <li>
+                    <a href="#" target="_blank" class="contact-icon">
+                        <i class="bi bi-github" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" class="contact-icon">
+                        <i class="bi bi-linkedin" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" class="contact-icon">
+                        <i class="bi bi-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+            
+            <hr>
+
+            <div class="copyright">
+                <a class="animate-link" href="https://ariesan.github.io/" target="_blank" > ♥ Ariesan </a>
+            </div>
+
+        </div>
+    </div>    
+</section>       
+</body>
+</html>
